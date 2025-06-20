@@ -78,30 +78,30 @@ The Data Dictionary Explorer helps data teams quickly find and understand data a
 
 ```
 data_explorer/
-├── Data_Explorer.py           # Main application page
-├── pages/                     # Additional pages (auto-discovered)
-│   ├── About.py              # About & contact information
-│   └── ...                   # Future pages
-├── src/                      # Source code modules
-│   ├── constants.py          # Configuration and constants
-│   ├── core/                 # Business logic
-│   │   ├── data_processor.py # Data loading and cleaning
-│   │   ├── filter_engine.py  # Filtering operations
-│   │   └── session_manager.py# Session state management
-│   ├── components/           # UI components
-│   │   ├── ui_components.py  # Reusable UI elements
-│   │   ├── metadata_display.py# System info banners
-│   │   └── export_manager.py # Export functionality
-│   ├── pages/                # Page logic (business layer)
-│   │   ├── data_explorer.py  # Main page logic
-│   │   └── about.py          # About page logic
-│   └── utils/                # Utility functions
-│       └── helpers.py        # Common utilities
-├── docs/                     # Data dictionary files
-│   ├── metadata.json        # System metadata
-│   └── *.xlsx               # Excel data dictionaries
-├── requirements.txt          # Python dependencies
-└── README.md                # This file
+├── Data_Explorer.py            # Main application page
+├── pages/                      # Additional pages (auto-discovered)
+│   ├── About.py                # About & contact information
+│   └── ...                     # Future pages
+├── src/                        # Source code modules
+│   ├── constants.py            # Configuration and constants
+│   ├── core/                   # Business logic
+│   │   ├── data_processor.py   # Data loading and cleaning
+│   │   ├── filter_engine.py    # Filtering operations
+│   │   └── session_manager.py  # Session state management
+│   ├── components/             # UI components
+│   │   ├── ui_components.py    # Reusable UI elements
+│   │   ├── metadata_display.py # System info banners
+│   │   └── export_manager.py   # Export functionality
+│   ├── pages/                  # Page logic (business layer)
+│   │   ├── data_explorer.py    # Main page logic
+│   │   └── about.py            # About page logic
+│   └── utils/                  # Utility functions
+│       └── helpers.py          # Common utilities
+├── docs/                       # Data dictionary files
+│   ├── metadata.json           # System metadata
+│   └── *.xlsx                  # Excel data dictionaries
+├── requirements.txt            # Python dependencies
+└── README.md                   # This file
 ```
 
 ## ⚙️ Configuration
