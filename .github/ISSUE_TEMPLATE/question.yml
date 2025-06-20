@@ -1,0 +1,81 @@
+name: ❓ Question/Support
+description: Ask a question about using the Data Dictionary Explorer
+title: "[QUESTION] "
+labels: ["question", "help-wanted"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about how to use the Data Dictionary Explorer? We're here to help!
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed the following
+      options:
+        - label: I have checked the About page for contact information
+          required: true
+        - label: I have searched existing issues for similar questions
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What type of question is this?
+      options:
+        - How to use a feature
+        - Data interpretation
+        - Technical issue
+        - Access/permissions
+        - Data source question
+        - General usage
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Please be as specific as possible
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish?
+      placeholder: Describe your goal or use case
+
+  - type: input
+    id: system
+    attributes:
+      label: Data Source/System
+      description: Which data source or system is this related to? (if applicable)
+      placeholder: e.g., Customer Management System
+
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What Have You Tried?
+      description: What steps have you already taken?
+      placeholder: Describe what you've attempted so far
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this question?
+      options:
+        - Low - No rush
+        - Medium - Needed this week
+        - High - Needed today
+        - Urgent - Blocking work
+    validations:
+      required: true

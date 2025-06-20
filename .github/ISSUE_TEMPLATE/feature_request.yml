@@ -1,0 +1,113 @@
+name: 💡 Feature Request
+description: Suggest a new feature or enhancement
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand your needs.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed the following
+      options:
+        - label: I have searched existing issues and feature requests
+          required: true
+        - label: This feature would benefit multiple users (not just me)
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem/Need
+      description: What problem does this feature solve? What need does it address?
+      placeholder: Describe the business need or pain point this feature would address
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your ideal solution or feature
+      placeholder: What would you like to see implemented?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: Which area of the application would this feature affect?
+      options:
+        - Search & Filtering
+        - Data Display/Visualization
+        - Export Functionality
+        - User Interface
+        - Performance
+        - Data Management
+        - System Administration
+        - New Page/Section
+        - Integration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to your workflow?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve efficiency
+        - High - Blocking current work
+        - Critical - Preventing use of the tool
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Provide specific examples of how this feature would be used
+      placeholder: |
+        Example scenarios:
+        1. When I need to...
+        2. As a [role], I want to...
+        3. During [process], it would help to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: Current workarounds or other ways to solve this problem
+
+  - type: input
+    id: users_affected
+    attributes:
+      label: Users Affected
+      description: How many team members would benefit from this feature?
+      placeholder: e.g., 5-10 data analysts, entire data team, specific department
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Examples
+      description: Any wireframes, mockups, or examples from other tools?
+      placeholder: Attach images or describe visual examples
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Technical considerations, dependencies, timeline requirements, etc.

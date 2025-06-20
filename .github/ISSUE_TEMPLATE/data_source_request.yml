@@ -1,0 +1,123 @@
+name: 📊 Data Source Request
+description: Request to add a new data source/system
+title: "[DATA SOURCE] "
+labels: ["data-source", "enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request to add a new data source to the Data Dictionary Explorer.
+
+  - type: input
+    id: system_name
+    attributes:
+      label: System Name
+      description: What is the name of the data source/system?
+      placeholder: e.g., Customer Relationship Management System
+    validations:
+      required: true
+
+  - type: input
+    id: system_abbreviation
+    attributes:
+      label: System Abbreviation
+      description: Common abbreviation or short name
+      placeholder: e.g., CRM, ERP, DWH
+
+  - type: textarea
+    id: description
+    attributes:
+      label: System Description
+      description: Brief description of what this system contains
+      placeholder: What type of data does this system manage?
+    validations:
+      required: true
+
+  - type: input
+    id: data_owner
+    attributes:
+      label: Data Owner
+      description: Who owns/manages this data source?
+      placeholder: Name and email of the data owner
+    validations:
+      required: true
+
+  - type: input
+    id: itso_contact
+    attributes:
+      label: ITSO Contact
+      description: Technical contact for this system
+      placeholder: Name and email of technical contact
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Which environment is this data from?
+      options:
+        - Production
+        - Staging
+        - Development
+        - Test
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: data_classification
+    attributes:
+      label: Data Classification
+      description: What is the sensitivity level of this data?
+      options:
+        - Public
+        - Internal
+        - Confidential
+        - Restricted
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: file_info
+    attributes:
+      label: File Information
+      description: Details about the data dictionary file
+      placeholder: |
+        - File format (Excel, CSV, etc.)
+        - Number of sheets
+        - Approximate size
+        - Update frequency
+    validations:
+      required: true
+
+  - type: input
+    id: update_frequency
+    attributes:
+      label: Update Frequency
+      description: How often is this data dictionary updated?
+      placeholder: e.g., Monthly, Quarterly, As needed
+
+  - type: textarea
+    id: business_justification
+    attributes:
+      label: Business Justification
+      description: Why is this data source needed in the explorer?
+      placeholder: What business need does this address? Who will use it?
+    validations:
+      required: true
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Desired Timeline
+      description: When do you need this added?
+      placeholder: e.g., End of Q1, ASAP, No rush
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other relevant details
+      placeholder: Special requirements, dependencies, compliance considerations, etc.
