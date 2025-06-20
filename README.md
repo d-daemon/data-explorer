@@ -241,14 +241,7 @@ pyyaml>=6.0               # YAML metadata support
 
 ### Data Questions
 - Contact the respective data owners (listed in system metadata)
-- Reach out to the data governance team
-
-## 📊 Usage Statistics
-
-- **Systems Integrated**: 12+
-- **Monthly Active Users**: 45+
-- **Data Sources**: 8 different systems
-- **Average Session**: 15 minutes
+- Reach out to the data strategy team
 
 ## 📜 License
 
