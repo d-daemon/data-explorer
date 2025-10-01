@@ -1,12 +1,12 @@
-# 📊 Data Explorer
+# Data Explorer in Python
 
-A user-friendly web application for exploring, searching, and filtering data dictionaries from multiple source systems. Built with Streamlit for internal team use.
+A user-friendly web application for exploring, searching, and filtering data dictionaries from multiple source systems.
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-v1.28+-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🎯 Purpose
+## Purpose
 
 The Data Dictionary Explorer helps data teams quickly find and understand data across multiple systems by providing:
 - **Fast search** across all data dictionary fields
@@ -15,33 +15,33 @@ The Data Dictionary Explorer helps data teams quickly find and understand data a
 - **Export capabilities** for filtered results
 - **System metadata** with ownership and contact information
 
-## ✨ Features
+## Features
 
-### 🔍 **Search & Filter**
+### **Search & Filter**
 - **Global Search**: Instant text search across all columns
 - **Dynamic Filters**: Add/remove filters on-demand with operators:
   - Contains, Equals, Starts with, Ends with, Not contains, In list
 - **Real-time Results**: Filters update automatically
 - **Enable/Disable**: Toggle filters without removing them
 
-### 📊 **Data Visualization**
+### **Data Visualization**
 - **Flexible Views**: Standard (all columns) or Advanced (select columns)
 - **Multi-Sheet Support**: Navigate between Excel sheets with tabs
 - **Data Information**: Column types, counts, and unique values
 - **Large Table Display**: 700px height for reduced scrolling
 
-### 📥 **Export Options**
+### **Export Options**
 - **Filtered Results**: Download as Excel or CSV
 - **Complete Datasets**: Export all sheets at once
 - **Preserves Formatting**: Maintains data types and structure
 
-### 🏢 **System Management**
+### **System Management**
 - **Pre-configured Systems**: Load from `docs/` directory
 - **Metadata Integration**: System ownership and contact info
 - **File Upload**: Support for ad-hoc Excel files
 - **Data Cleaning**: Automatic whitespace trimming
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -74,7 +74,7 @@ The Data Dictionary Explorer helps data teams quickly find and understand data a
 5. **Open browser**
    Navigate to `http://localhost:8501`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 data_explorer/
@@ -104,7 +104,7 @@ data_explorer/
 └── README.md                   # This file
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Adding New Data Sources
 
@@ -138,7 +138,7 @@ Edit `src/constants.py` to modify:
 - `MAX_MULTISELECT_OPTIONS`: Limit multiselect dropdown size
 - `FILTER_OPERATORS`: Add or modify filter operators
 
-## 🎮 Usage Guide
+## Usage Guide
 
 ### Basic Usage
 
@@ -166,7 +166,7 @@ Edit `src/constants.py` to modify:
 - **Column Selection**: Choose specific columns in Advanced view
 - **Sheet Comparison**: View multiple sheets side-by-side
 
-## 🔧 Development
+## Development
 
 ### Adding New Pages
 
@@ -178,11 +178,11 @@ Edit `src/constants.py` to modify:
 import streamlit as st
 from src.utils.helpers import apply_custom_css
 
-st.set_page_config(title="Your Page", icon="📈", layout="wide")
+st.set_page_config(title="Your Page", icon="🌐", layout="wide")
 
 def main():
     apply_custom_css()
-    st.markdown("# 📈 Your Page Title")
+    st.markdown("# Your Page Title")
     st.markdown("---")
     # Your page content here
 
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 - Utilities in `src/utils/`
 - Constants in `src/constants.py`
 
-## 🤝 Contributing
+## Contributing
 
 ### Reporting Issues
 
@@ -223,7 +223,7 @@ if __name__ == "__main__":
 4. Test thoroughly
 5. Submit pull request
 
-## 📋 Dependencies
+## Dependencies
 
 ```
 streamlit>=1.28.0          # Web application framework
@@ -232,7 +232,7 @@ openpyxl>=3.1.0           # Excel file handling
 pyyaml>=6.0               # YAML metadata support
 ```
 
-## 🆘 Support
+## Support
 
 ### Technical Issues
 - Create an issue in this repository
@@ -243,11 +243,11 @@ pyyaml>=6.0               # YAML metadata support
 - Contact the respective data owners (listed in system metadata)
 - Reach out to the data strategy team
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🛠️ Core
+## Core
 
 - Built with [Streamlit](https://streamlit.io/)
 - Data processing powered by [Pandas](https://pandas.pydata.org/)
